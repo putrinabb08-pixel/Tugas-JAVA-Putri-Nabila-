@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+class Lingkaran {
+    private double r;
+
+    // constructor
+    public Lingkaran(double r) {
+        this.r = r;
+    }
+
+    public double diameter() {
+        return 2 * r;
+    }
+
+    public double luas() {
+        return Math.PI * r * r;
+    }
+
+    public double keliling() {
+        return 2 * Math.PI * r;
+    }
+}
+
+public class LatihanLingkaran {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // input radius
+        System.out.print("Masukkan jari-jari: ");
+        double r = scanner.nextDouble();
+
+        // validasi sederhana
+        if (r <= 0) {
+            System.out.println("Jari-jari harus lebih dari 0!");
+            return;
+        }
+
+        // buat objek
+        Lingkaran lingkaran = new Lingkaran(r);
+
+        // tampilkan hasil
+        System.out.println("Diameter = " + lingkaran.diameter());
+        System.out.printf("Luas = %.2f\n", lingkaran.luas());
+        System.out.printf("Keliling = %.2f\n", lingkaran.keliling());
+
+        scanner.close();
+    }
+}

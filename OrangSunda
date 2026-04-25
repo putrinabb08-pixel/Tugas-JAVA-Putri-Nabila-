@@ -1,0 +1,11 @@
+public class OrangSunda extends Orang {
+
+    public OrangSunda(String namaDepan, String namaBelakang) {
+        super(namaDepan, namaBelakang);
+    
+    }
+
+    public String namaPanggilan() {
+        return "Aa " + this.getNamaDepan();
+    }
+}

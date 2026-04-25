@@ -1,0 +1,18 @@
+public class OrangJawa extends Orang2 {
+
+    private String jenisKelamin;
+
+    public OrangJawa(String depan, String belakang, String jenisKelamin) {
+        super(depan, belakang);
+        this.jenisKelamin = jenisKelamin;
+    }
+
+    public String namaPanggilan() {
+        if (this.jenisKelamin.equalsIgnoreCase("L")) {
+            return "MAS " + this.getNamaDepan();
+        } else {
+            return "MBAK " + this.getNamaDepan();
+        }
+    }
+
+}

@@ -1,0 +1,14 @@
+public class LatihnOrang2 {
+
+    public Orang2(String namaDepan, String namaBelakang) {
+        this.namaDepan = namaDepan;
+        this.namaBelakang = namaBelakang;
+    }
+
+    public static void main(String[] args) {
+        Orang2 orang = new Orang2("Budi", "Raharjo");
+
+        System.out.println("Nama depan = " + orang.getNamaDepan());
+        System.out.println("Nama belakang = " + orang.getNamaBelakang());
+    }
+}
